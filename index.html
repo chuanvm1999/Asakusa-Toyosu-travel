@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asakusa Travel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Customize the page size to A4 landscape */
+        @page {
+            size: A4 landscape;
+        }
+
+        /* Set body to fill the entire page */
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow-x: scroll;
+        }
+
+        .a4-size {
+            width: 29.7cm;
+            /* Chiều rộng giấy A4 */
+            height: 21cm;
+            /* Chiều cao giấy A4 */
+            background-color: #ffffff;
+            margin: auto;
+        }
+
+        .h {
+            min-height: 21cm;
+            padding: 0;
+            margin: 0;
+        }
+
+        .col-6.grid-item {
+            min-height: 10.5cm;
+            padding: 0;
+            margin: 0;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .row .col.image-soft-edge-rectangle {
+            padding: 0;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 20px;
+            /* Độ cong của viền */
+            box-shadow: 0 0 10px rgb(214, 209, 209);
+            /* Hiệu ứng mờ */
+        }
+
+        .image-soft-edge-rectangle img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .col-4.h {
+            padding: 0 5px
+        }
+
+        .pg-chua{
+            background-color: #fffcd5;
+        }
+
+        .pg-cong-vien{
+            background-color: #fedce6;
+        }
+
+        .pg-nha-tam{
+            background-color: #e7f9fb;
+        }
+        .pg-trung-tam{
+            background-color: #ecfbe7;
+        }
+
+        .w-80{
+            max-width: 80%;
+        }
+
+        .qr{
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a4-size">
+        <div class="row">
+            <!-- bia -->            
+            <div class="col-4 h">
+                <span>ヴ・ミン・チュン</span>
+                <img class="d-block qr" style="max-width: 150px" src="./qr-code.png" alt="">
+                <img class="ms-auto d-block " style="max-width: 60%;" src="./Asakusa-maps.png" alt="">
+                <div class="card w-100" style="border: none;">
+                    <div class="card-img-top p-1 pt-5">
+                        <div class="row">
+                            <div class="col image-soft-edge-rectangle"><img src="./Asakusa/cong-chua-toi.jpg" alt=""
+                                    class="w-100"></div>
+                            <div class="col image-soft-edge-rectangle"><img src="./Asakusa/hoa-cong-vien.jpg" alt=""
+                                    class="w-100"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col image-soft-edge-rectangle"><img src="./Asakusa/nha-tam.jpg" alt="" class="w-100">
+                            </div>
+                            <div class="col image-soft-edge-rectangle"><img src="./Asakusa/trung-tam.jpg" alt="" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text fs-4">浅草は東京の伝統的な文化と歴史が息づく街であり、古い神社や寺院、賑やかな商店街など、魅力的な観光スポットがたくさんあります。</p>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 h">
+                <div class="row">
+                    <!-- chua -->
+                    <div class="col-6 grid-item">
+                        <div class="card w-100 h-100 pg-chua">
+                            <div class="card-img-top p-1">
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Asakusa/cong-chua-toi.jpg" alt="" class="mx-auto d-block p-1 w-80"></div>
+                                    <div class="col p-0"><img src="./Asakusa/den.jpg" alt="" class="mx-auto d-block p-1 w-80"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Asakusa/trong-chua.jpg" alt="" class="mx-auto d-block p-1 w-80"></div>
+                                    <div class="col p-0"><img src="./Asakusa/ngoai-chua.jpg" alt="" class="mx-auto d-block p-1 w-80"></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-3">1. 浅草寺</h5>
+                                <p class="card-text fs-6">浅草寺は、真言宗の寺院です。浅草寺は、聖観音菩薩を本尊とする寺院でいます。浅草寺は、東京で最も古い寺院の一つであります。</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- trung tam thuong mai -->
+                    <div class="col-6 grid-item ">
+                        <div class="card w-100 h-100 pg-trung-tam">
+                            <div class="card-img-top p-1">
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Asakusa/khu-cho.jpg" alt="" class="mx-auto d-block p-1 w-100"></div>
+                                    <div class="col p-0"><img src="./Asakusa/khu-vui-choi.jpg" alt="" class="mx-auto d-block p-1 w-100"></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-3">2. 仲見世、西参道、新仲見世</h5>
+                                <p class="card-text fs-6">仲見世や西参道や新仲見世は商店街です。仲見世には、、和菓子、伝統工芸品、お土産など様々な商品が販売されています。仲見世は、浅草寺を訪れた際には必ず立ち寄りたい場所です。</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cong vien -->
+                    <div class="col-6 grid-item " style="min-height: calc(10.5cm - 50px);">
+                        <div class="card w-100 h-100 pg-cong-vien">
+                            <div class="card-img-top p-1 pt-5">
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Asakusa/hoa-cong-vien.jpg" alt="" class="mx-auto d-block p-1 w-100"></div>
+                                    <div class="col p-0"><img src="./Asakusa/cong-hoa-cong-vien.jpg" alt="" class="mx-auto d-block p-1 w-100"></div>
+                                
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-3">3. 桜の広場</h5>
+                                <p class="card-text fs-6">桜の名所として有名な広場です。 春には桜が咲き、ピクニックや道行く人々で賑わいます。</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- nha tam -->
+                    <div class="col-6 grid-item " style="min-height: calc(10.5cm - 50px);">
+                        <div class="card w-100 h-100 pg-nha-tam">
+                            <div class="card-img-top p-1">
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Asakusa/nha-tam-1.jpg" alt="" class="mx-auto d-block p-1 w-100"></div>
+                                    <div class="col p-0"><img src="./Asakusa/nha-tam.jpg" alt="" class="mx-auto d-block p-1 w-100"></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-3">4. 曙湯</h5>
+                                <p class="card-text" style="font-size: small;">創業は昭和24年。脱衣室内の高い空間とそこに描かれている花の画は歴史を感じさせてくれます。お風呂に入ると、疲れはほとんどなくなり、とてもリラックスして心地よい気分になりました。</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

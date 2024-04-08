@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyosu Travel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Customize the page size to A4 landscape */
+        @page {
+            size: A4 landscape;
+        }
+
+        /* Set body to fill the entire page */
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow-x: scroll;
+        }
+
+        .a4-size {
+            width: 29.7cm;
+            /* Chiều rộng giấy A4 */
+            height: 21cm;
+            /* Chiều cao giấy A4 */
+            background-color: #ffffff;
+            margin: auto;
+        }
+
+        .h {
+            min-height: 21cm;
+            padding: 0;
+            margin: 0;
+        }
+
+        .col-6.grid-item {
+            min-height: 10.5cm;
+            padding: 0;
+            margin: 0;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .row .col.image-soft-edge-rectangle {
+            padding: 0;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 20px;
+            /* Độ cong của viền */
+            box-shadow: 0 0 10px rgb(214, 209, 209);
+            /* Hiệu ứng mờ */
+        }
+
+        .image-soft-edge-rectangle img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .col-4.h {
+            padding: 0 5px
+        }
+
+        .pg-nha-tam {
+            background-color: #fffcd5;
+        }
+
+        .pg-cong-vien {
+            background-color: #fedce6;
+        }
+
+        .pg-chua {
+            background-color: #e7f9fb;
+        }
+
+        .pg-trung-tam {
+            background-color: #ecfbe7;
+        }
+
+        .w-80 {
+            max-width: 80%;
+        }
+
+        .qr{
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a4-size">
+        <div class="row">
+            <!-- bia -->
+            <div class="col-4 h">
+                <span>ヴ・ミン・チュン</span>
+                <img class="d-block qr" style="max-width: 150px" src="./qr-code.png" alt="">
+                <img class="ms-auto d-block " style="max-width: 60%;" src="./Toyosu-map.png" alt="">
+                <div class="card w-100" style="border: none; padding: -10%;">
+                    <div class="card-img-top p-1 pt-5">
+                        <div class="row">
+                            <div class="col image-soft-edge-rectangle"><img src="./Toyosu/cong-vien (1).jpg" alt=""
+                                    class="w-100"></div>
+                            <div class="col image-soft-edge-rectangle"><img src="./Toyosu/cong-vien (2).jpg" alt=""
+                                    class="w-100"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col image-soft-edge-rectangle"><img src="./Toyosu/bien.jpg" alt=""
+                                    class="w-100">
+                            </div>
+                            <div class="col image-soft-edge-rectangle"><img src="./Toyosu/ke-cho.jpg" alt=""
+                                    class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text fs-3">近代的な建築、豊富なショッピング、新鮮な魚介料理が楽しめるエリア。 ここには東京最大級の魚市場があります。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 h">
+                <div class="row">
+                    <!-- cho ca -->
+                    <div class="col-6 grid-item">
+                        <div class="card w-100 h-100 pg-chua">
+                            <div class="card-img-top p-1">
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Toyosu/cho.jpg" alt=""
+                                            class="mx-auto d-block p-1 w-100"></div>
+                                    <div class="col p-0"><img src="./Toyosu/cho-2.jpg" alt=""
+                                            class="mx-auto d-block p-1 w-100"></div>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-3">1. 豊洲市場</h5>
+                                <p class="card-text fs-6">プロの料理人から一般のグルメまで、多くの人に愛される、新鮮で多彩な魚介類を販売する世界最大級の市場です。
+                                    ここでは定期的に魚のオークションが開催されます。</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- vuon hoa-->
+                    <div class="col-6 grid-item ">
+                        <div class="card w-100 h-100 pg-trung-tam">
+                            <div class="card-img-top p-1">
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Toyosu/san-thuong-1 (1).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                    <div class="col p-0"><img src="./Toyosu/san-thuong-1 (2).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Toyosu/san-thuong-1 (3).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                    <div class="col p-0"><img src="./Toyosu/san-thuong-1 (4).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-3">2. 豊洲市場 屋上緑化広場</h5>
+                                <p class="card-text fs-6">
+                                    豊洲市場の屋上緑地広場は、都会の中で自然と触れ合い、リラックスできる場所です。 上からは海と豊洲公園の景色が見えます。
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cong vien -->
+                    <div class="col-6 grid-item " style="min-height: calc(10.5cm - 50px);">
+                        <div class="card w-100 h-100 pg-cong-vien">
+                            <div class="card-img-top p-1">
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Toyosu/cong-vien (1).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                    <div class="col p-0"><img src="./Toyosu/cong-vien (2).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col p-0"><img src="./Toyosu/cong-vien (3).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                    <div class="col p-0"><img src="./Toyosu/cong-vien (4).jpg" alt=""
+                                            class="mx-auto d-block p-1 w-80"></div>
+                                </div>
+                            </div>
+                            <div style="padding: -20px;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-3">3. 春海橋公園、豊洲公園</h5>
+                                    <p class="card-text fs-6">東京湾に面した大きな公園です。子供の遊び場や釣り、ジョギングなどのアクティビティも充実しており、家族みんなで楽しめる場所です。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- khu an uong-->
+                    <div class="col-6 grid-item " style="min-height: calc(10.5cm - 50px);">
+                        <div class="card w-100 h-100 pg-nha-tam">
+                            <div class="card-img-top p-1">
+                                <div class="row">
+                                    <div class="col p-0"><img
+                                            src="https://lh3.googleusercontent.com/p/AF1QipPxpwQ5mvADWQbIrJWwZT2cvWhjldGabC7mGVp5=s1360-w1360-h1020"
+                                            alt="" class="mx-auto d-block p-1 w-80"></div>
+                                    <div class="col">
+                                        <div class="p-0"><img src="./Toyosu/khu-an-uong (3).jpg" alt=""
+                                                class="mx-auto d-block p-1 w-80"></div>
+                                        <div class="p-0"><img src="./Toyosu/ke-cho.jpg" alt=""
+                                                class="mx-auto d-block p-1 w-80"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fs-3">4. 時の鐘広場</h5>
+                                <p class="card-text fs-6">時の鐘広場は浅草の歴史的建造物であり、新鮮な魚介料理店や海鮮料理店が数多く立ち並ぶ、伝統と現代の融合を感じられる素敵な場所です。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
